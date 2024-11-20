@@ -49,7 +49,7 @@ public class Verwaltung {
 
                     System.out.print("Gebe den Buchstaben Schlüssel ein:");
                     vigenere.setS(sc.nextLine());
-                    sc.nextLine();
+
 
                     vigenere.entschluesseln();
                     System.out.println("Entschlüsselte Nachricht: " + vigenere.getKt());
