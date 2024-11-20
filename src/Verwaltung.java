@@ -38,7 +38,7 @@ public class Verwaltung {
 
                     System.out.print("Gebe den Buchstaben Schlüssel ein:");
                     vigenere.setS(sc.nextLine());
-                    sc.nextLine();
+
 
                     vigenere.verschluesseln();
                     System.out.println("Verschlüsselte Nachricht: " + vigenere.getGt());
