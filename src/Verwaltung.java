@@ -29,36 +29,49 @@ public class Verwaltung {
 
             switch (option) {
                 case 0:
-                    //spiegelt den wert von option wider und vergleicht diesen
+                    //case wert wird mit option verglichen, wenn diese gleich sind...
                     System.out.println("Programm wird beendet.");
+                    //Nachricht zum Informieren des benutzters
                     break;
+
                 case 1:
+                    //case wert wird mit option verglichen, wenn diese gleich sind...
+
                     System.out.println("Gebe eine Nachricht zum Verschlüsseln ein:");
                     vigenere.setKt(sc.nextLine());
-
+                    //Kt wird gesetzt
                     System.out.print("Gebe den Buchstaben Schlüssel ein:");
                     vigenere.setS(sc.nextLine());
+                    //s wird gesetzt
 
 
                     vigenere.verschluesseln();
                     System.out.println("Verschlüsselte Nachricht: " + vigenere.getGt());
+                    //Ausgabe vom Ergebniss
                     break;
                 case 2:
+                    //case wert wird mit option verglichen, wenn diese gleich sind...
+
                     System.out.println("Gebe die verschlüsselte Nachricht ein:");
                     vigenere.setGt(sc.nextLine());
-
+                    //gt wird gesetzt
                     System.out.print("Gebe den Buchstaben Schlüssel ein:");
                     vigenere.setS(sc.nextLine());
-
+                    //s wird gesetzt
 
                     vigenere.entschluesseln();
                     System.out.println("Entschlüsselte Nachricht: " + vigenere.getKt());
+                    //Ausgabe vom Ergebniss
                     break;
                 default:
+                    //wenn kein case zutrifft
                     System.out.println("Ungültige Option, bitte wähle erneut.");
+                    //Nachricht zum Informieren des benutzters, dass er keine gültige option gewählt hat
+
             }
         } while (option != 0);
         //ruft alles unter dem do wieder auf, wenn option ungleich 0 ist
         sc.close();
+        //beendung des Programms
     }
 }

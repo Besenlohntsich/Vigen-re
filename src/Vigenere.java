@@ -74,7 +74,9 @@ public class Vigenere {
                     // um Buchstaben zu nutzen die im Alphabet liegen
                 }
 
-                result += ch;
+
+                    result += ch;
+
             }
 
             kt = result;
